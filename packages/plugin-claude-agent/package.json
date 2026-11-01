@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@kilocode/plugin-claude-agent",
+  "version": "0.1.0",
+  "description": "Kilo Code plugin that runs Claude models through the user's own Claude Code login",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./provider": "./src/provider.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsgo --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/provider": "3.0.14",
+    "@anthropic-ai/claude-agent-sdk": "0.3.301",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "which": "6.0.1"
+  },
+  "devDependencies": {
+    "@kilocode/plugin": "workspace:*",
+    "@tsconfig/node22": "catalog:",
+    "@types/node": "catalog:",
+    "@types/which": "3.0.4",
+    "@typescript/native-preview": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "^5.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndreyPavlenko/kilocode",
+    "directory": "packages/plugin-claude-agent"
+  }
+}
