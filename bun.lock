@@ -772,6 +772,26 @@
         "@opentui/solid",
       ],
     },
+    "packages/plugin-agy-agent": {
+      "name": "@kilocode/plugin-agy-agent",
+      "version": "0.1.0",
+      "dependencies": {
+        "@agentclientprotocol/sdk": "0.21.0",
+        "@ai-sdk/provider": "3.0.14",
+        "@modelcontextprotocol/sdk": "1.32.1",
+        "which": "6.0.1",
+        "zod": "catalog:",
+      },
+      "devDependencies": {
+        "@kilocode/plugin": "workspace:*",
+        "@tsconfig/node22": "catalog:",
+        "@types/node": "catalog:",
+        "@types/which": "3.0.4",
+        "@typescript/native-preview": "catalog:",
+        "typescript": "catalog:",
+        "vitest": "^5.0.5",
+      },
+    },
     "packages/plugin-atomic-chat": {
       "name": "@kilocode/plugin-atomic-chat",
       "version": "7.8.36",
@@ -1884,6 +1904,8 @@
     "@kilocode/kilo-web-ui": ["@kilocode/kilo-web-ui@workspace:packages/kilo-web-ui"],
 
     "@kilocode/plugin": ["@kilocode/plugin@workspace:packages/plugin"],
+
+    "@kilocode/plugin-agy-agent": ["@kilocode/plugin-agy-agent@workspace:packages/plugin-agy-agent"],
 
     "@kilocode/plugin-atomic-chat": ["@kilocode/plugin-atomic-chat@workspace:packages/plugin-atomic-chat"],
 

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@kilocode/plugin-agy-agent",
+  "version": "0.1.0",
+  "description": "Kilo Code plugin that runs models through the user's own Google Antigravity CLI login",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./provider": "./src/provider.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsgo --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@agentclientprotocol/sdk": "0.21.0",
+    "@ai-sdk/provider": "3.0.14",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "which": "6.0.1",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@kilocode/plugin": "workspace:*",
+    "@tsconfig/node22": "catalog:",
+    "@types/node": "catalog:",
+    "@types/which": "3.0.4",
+    "@typescript/native-preview": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "^5.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndreyPavlenko/kilocode",
+    "directory": "packages/plugin-agy-agent"
+  }
+}
